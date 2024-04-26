@@ -38,11 +38,9 @@ export class AuthService {
 checkRouting(data: string): boolean {
 
 
- if(data == 'Admmin'){
-  return true;
- }
+  
 
-  return false;
+  return true;
 };
 register(data: Register): Observable<string> {
   return this.http.post<string>(`${this.apiUrl}Users/Register`, data).pipe(
